@@ -1,0 +1,14 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+    val num = readLine()!!.toDouble()
+    when {
+        num<0||num>100 -> println("Fora de intervalo")
+        num>=0 && num<=25 ->  println("Intervalo [0,25]")
+        num>25 && num<=50 -> println("Intervalo (25,50]")
+        num>50 && num<=75 -> println("Intervalo (50,75]")
+        num>75 && num<=100 -> println("Intervalo (75,100]")
+    }
+
+}
