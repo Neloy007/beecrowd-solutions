@@ -6,19 +6,22 @@ fun main(args: Array<String>) {
         println("It's Not a quadratic equation. It can be Linear.")
     }else if (discriminant<0.0){
         println("It has two complex roots.(Imaginary outputs)")
-    }else if (discriminant==0.0){
+
+    }
+    else if (discriminant==0.0){
         //when discreminent = 0
         println("It has two real and equal roots.(two real and equal roots)")
         val x = -b/(2*a)
         println("Two real and Equal roots: $x")
 
-    }else {
+    }
+    else {
 
         println("It has two real and distinct roots.")
         val x1 = (-b+sqrt(discriminant))/(2*a)
         val x2 = (-b-sqrt(discriminant))/(2*a)
-        println("x1 = %.5f".format(x1))
-        println("x2 = %.5f".format(x2))
+        println("Root1 = %.5f".format(x1))
+        println("Root2 = %.5f".format(x2))
     }
 
 }
