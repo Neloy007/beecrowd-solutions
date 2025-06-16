@@ -14,7 +14,8 @@ fun main(args: Array<String>) {
         // It has two real and equal roots.(two real and equal roots)
 
         val x = -b/(2*a)
-        println("Two real and Equal roots: $x")
+        println("Root1: $x")
+        println("Root2: $x")
 
     }
     else {
