@@ -1,6 +1,10 @@
-class Person(val name: String)
+class Person(val name: String){
+    init {
+        println("My name is $name")
+    }
+}
 
 fun main(args: Array<String>) {
     val person = Person("Niloy")
-    println("My name is ${person.name}")
+
 }
