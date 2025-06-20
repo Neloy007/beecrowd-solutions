@@ -10,11 +10,15 @@ class SmartWallet(private var walletId: String,
         return balance
     }
     fun addFunds(amount : Double){
-        if(amount > 0){
-            balance += amount
-            println("Successfully Added Money: $amount.")
-        }else{
-            println("Invalid Amount.")
+//
+        when {
+            amount > 0 ->{
+                balance += amount
+                println("Successfully Added Money: $amount.")}
+            else -> {
+                "Invalid Amount."
+
+            }
         }
     }
 
